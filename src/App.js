@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import CandleChart from "./components/CandleChart";
+import CandleChart from "./components/CandleChart";
 import Navbar from "./components/Navbar";
 import Infobar from "./components/Infobar";
 
@@ -18,7 +18,7 @@ function App() {
     <div>
       <Navbar />
       <Infobar price={price} />
-      {/* <CandleChart /> */}
+      <CandleChart />
     </div>
   );
 }
