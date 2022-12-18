@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Typography } from "@mui/material";
-import CandleChart from "./components/CandleChart";
+// import CandleChart from "./components/CandleChart";
 import Navbar from "./components/Navbar";
+import Infobar from "./components/Infobar";
 
 function App() {
   const [price, setPrice] = useState(0);
@@ -10,16 +10,15 @@ function App() {
     let ws = new WebSocket("wss://stream.binance.com:9443/ws/etheur@trade");
     ws.onmessage = (event) => {
       let stockObject = JSON.parse(event.data);
-      setPrice(parseFloat(stockObject.p).toFixed(2));
+      setPrice(parseFloat(stockObject.p).toFixed(0));
     };
   }, []);
 
   return (
     <div>
       <Navbar />
-      <Typography variant="h4">Ethereum Live Price Update : </Typography>
-      <Typography variant="h3">${price}</Typography>
-      <CandleChart />
+      <Infobar price={price} />
+      {/* <CandleChart /> */}
     </div>
   );
 }

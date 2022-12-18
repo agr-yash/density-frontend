@@ -22,11 +22,12 @@ ul li:first-child {
   text-decoration: underline;
   font-weight: 600;
   font-size: 18px;
+  color: #FFFFFF;
 }
 
 .navbar {
-  background-color: black;
-  color:white;
+  background-color: #1F1F24;
+  color:#D9D9D9;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,6 +48,7 @@ ul li:first-child {
   display: flex;
   align-items: center;
   justify-self: center;
+  color: #FCFCFC;
 }
 
 .density-logo {
@@ -62,19 +64,43 @@ ul li:first-child {
 
 
 .grid-item {
-  background-color: white;
+  background-color:#FCFCFC;
   height: 3px;
   width: 3px;
 }
 
 .density-logo .grid-item:nth-child(18n + 12) {
-  background-color: black;
+  background-color: #1F1F24;
 }
 
 .density-logo .grid-item:nth-child(30n + 6) {
-  background-color: black;
+  background-color: #1F1F24;
 }
 
 .density-logo .grid-item:nth-child(30n + 5) {
-  background-color: black;
+  background-color: #1F1F24;
+}
+.infobar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #2C2C34;
+  padding: 1rem;
+}
+
+.stock-price {
+  color: #00BD84;
+  /* font-size: 2rem; */
+}
+
+.stock-name {
+  color: #FCFCFC;
+}
+
+.infobar__title {
+  color: #A9A9A9;
+}
+
+.infobar__value {
+  color: #FCFCFC;
 }

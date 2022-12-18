@@ -26,7 +26,7 @@ const Navbar = () => {
           <li>Adjust Margin</li>
         </ul>
       </div>
-      <div class="icons">
+      <div className="icons">
         <LibraryBooksTwoToneIcon />
         <AccountBalanceWalletTwoToneIcon />
         <PermIdentityTwoToneIcon />
