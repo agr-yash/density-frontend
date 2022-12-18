@@ -28,14 +28,23 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="icons">
-        <LibraryBooksTwoToneIcon />
-        <AccountBalanceWalletTwoToneIcon />
-        <Badge variant="dot" color="error">
-          <PermIdentityTwoToneIcon />
-        </Badge>
-
-        <NotificationsNoneTwoToneIcon />
-        <LogoutIcon />
+        <div className="icon-container">
+          <LibraryBooksTwoToneIcon />
+        </div>
+        <div className="icon-container">
+          <AccountBalanceWalletTwoToneIcon />
+        </div>
+        <div className="icon-container">
+          <Badge variant="dot" color="error">
+            <PermIdentityTwoToneIcon />
+          </Badge>
+        </div>
+        <div className="icon-container">
+          <NotificationsNoneTwoToneIcon />
+        </div>
+        <div className="icon-container">
+          <LogoutIcon />
+        </div>
       </div>
     </div>
   );

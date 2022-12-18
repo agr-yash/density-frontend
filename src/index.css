@@ -59,6 +59,20 @@ ul li:first-child {
   margin-right: 1.5rem;
 }
 
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 43px;
+  background: #56565D;
+  border-radius: 40px;
+}
+
+.icons .icon-container:last-child {
+  background: none;
+}
+
 .density-brand {
   display: flex;
   align-items: center;
