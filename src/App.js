@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Typography } from "@mui/material";
 import CandleChart from "./components/CandleChart";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [price, setPrice] = useState(0);
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div>
+      <Navbar />
       <Typography variant="h4">Ethereum Live Price Update : </Typography>
       <Typography variant="h3">${price}</Typography>
       <CandleChart />
