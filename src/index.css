@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,17 +13,29 @@ code {
     monospace;
 }
 
+/* ------------Navbar section --------- */
+
 ul {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
   list-style: none;
+}
+
+li {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 ul li:first-child {
   text-decoration: underline;
-  font-weight: 600;
-  font-size: 18px;
   color: #FFFFFF;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .navbar {
@@ -38,9 +51,11 @@ ul li:first-child {
   align-items: center;
 }
 
+
+
 .icons {
   display: flex;
-  gap:0.5rem;
+  gap:1.5rem;
   margin-right: 1.5rem;
 }
 
@@ -52,16 +67,15 @@ ul li:first-child {
 }
 
 .density-logo {
-  padding: 30px 15px;
+  padding: 20px 15px;
   display: grid;
   grid-template-columns: 3px 3px 3px 3px 3px 3px;
   grid-gap: 1.5px;
 }
 
 .density-heading {
-  font-size: 2.5rem;
+  font-size: 30px;
 }
-
 
 .grid-item {
   background-color:#FCFCFC;
@@ -80,6 +94,9 @@ ul li:first-child {
 .density-logo .grid-item:nth-child(30n + 5) {
   background-color: #1F1F24;
 }
+
+/* --------- Infobar section ------------- */
+
 .infobar {
   display: flex;
   align-items: center;
@@ -90,17 +107,81 @@ ul li:first-child {
 
 .stock-price {
   color: #00BD84;
-  /* font-size: 2rem; */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+
+.stock-info {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
 }
 
 .stock-name {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
   color: #FCFCFC;
 }
 
+.stock-description {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #A9A9A9;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  width: 24px;
+  height: 24px;
+  background: #56565D;
+  border-radius: 16px;
+}
+
+.vertical {
+  position: absolute;
+  right: -3rem;
+  width: 38px;
+  height: 0px;
+  border: 1px solid #484852;
+  transform: rotate(90deg);
+}
+
+/* ------- InfoItem section ----- */
+
 .infobar__title {
   color: #A9A9A9;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .infobar__value {
   color: #FCFCFC;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.infobar div:nth-child(7) div.infobar__value {
+  color: #00BD84;
+  font-weight: 700;
 }

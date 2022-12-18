@@ -4,6 +4,7 @@ import NotificationsNoneTwoToneIcon from "@mui/icons-material/NotificationsNoneT
 import PermIdentityTwoToneIcon from "@mui/icons-material/PermIdentityTwoTone";
 import AccountBalanceWalletTwoToneIcon from "@mui/icons-material/AccountBalanceWalletTwoTone";
 import LibraryBooksTwoToneIcon from "@mui/icons-material/LibraryBooksTwoTone";
+import { Badge } from "@mui/material";
 
 const Navbar = () => {
   const arr = Array.from(Array(36).keys());
@@ -29,7 +30,10 @@ const Navbar = () => {
       <div className="icons">
         <LibraryBooksTwoToneIcon />
         <AccountBalanceWalletTwoToneIcon />
-        <PermIdentityTwoToneIcon />
+        <Badge variant="dot" color="error">
+          <PermIdentityTwoToneIcon />
+        </Badge>
+
         <NotificationsNoneTwoToneIcon />
         <LogoutIcon />
       </div>
