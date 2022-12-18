@@ -3,7 +3,7 @@ import { AdvancedRealTimeChart } from "react-ts-tradingview-widgets";
 
 const CandleChart = () => {
   return (
-    <div style={{ marginTop: "100px" }}>
+    <div>
       <AdvancedRealTimeChart
         theme="dark"
         width={"100vw"}
