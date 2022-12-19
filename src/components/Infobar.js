@@ -1,10 +1,9 @@
 import React from "react";
-import InfoItem from "./InfoItem";
-
-import stock_logo from "../images/stock-logo.svg";
-
-import { infoItems } from "../contants";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+
+import InfoItem from "./InfoItem";
+import stock_logo from "../images/stock-logo.svg";
+import { infoItems } from "../contants";
 
 const Infobar = ({ price }) => {
   return (

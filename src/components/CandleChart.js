@@ -5,6 +5,7 @@ const CandleChart = () => {
   return (
     <div className="candle-chart" style={{ height: "calc(100vh - 150px)" }}>
       <AdvancedRealTimeChart
+        symbol="BTC"
         theme="dark"
         width={"100vw"}
         height={"100%"}
